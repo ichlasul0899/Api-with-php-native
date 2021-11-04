@@ -7,8 +7,6 @@ $request_method=$_SERVER["REQUEST_METHOD"];
 switch ($request_method){
     case 'GET':
         if(!empty($_GET["id"])){
-            $url = "http://localhost/hot/1";
-            echo parse_url($url, PHP_URL_PATH);
             $id=intval($_GET["id"]);
             $news->get_news($id);
         } else {
@@ -21,9 +19,6 @@ switch ($request_method){
         break;
     break;
 }
-
-
-
 
 
 ?>
