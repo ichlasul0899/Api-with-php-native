@@ -1,0 +1,57 @@
+// $ssh_host = "sea.mobilku.net";
+// $ssh_port = 22;
+// $user = 'frnt2';
+// $pass = 'frnt202!';
+// $connection = ssh2_connect($ssh_host, $ssh_port);
+
+// if (ssh2_auth_password($connection, $user,$pass)) {
+//     echo "Authentication Successful!\n";
+// } else {
+//     echo "Authentication Failed";
+//     // die('Authentication Failed...');
+// }
+
+// $connection = ssh2_connect('sea.mobilku.net', 22); 
+// $user = 'frnt2';
+// $pass = 'frnt202!';
+
+// if (ssh2_auth_password($connection, $user,$pass)) {
+//     echo "Authentication Successful!\n";
+// } else {
+//     die('Authentication Failed...');
+//     echo "Authentication Failed...";
+// }
+
+
+// $tunnel = ssh2_tunnel($connection, 'localhost', 3307);
+
+
+// echo $db;
+
+
+// $db=mysqli_connect("127.0.0.1","iklas","amal1999!","db_toko");
+
+
+
+
+
+
+
+// $sql = "SELECT * FROM trans_news LEFT JOIN sys_attachments_meta ON target_id=trans_news.id WHERE target_type='news' AND trans_news.id='5196'";
+
+// $sql = "SELECT * FROM categories";
+// $data=array();
+// $result=mysqli_query($db, $sql);
+
+// while($row=mysqli_fetch_object($result))
+// {
+//     $data[]=$row;
+// }
+
+// $response=array(
+//                 'status' => 1,
+//                 'message' =>'Get Data Successfully.',
+//                 'data' => $data
+//             );
+// header('Content-Type: application/json');
+// echo json_encode($response);
